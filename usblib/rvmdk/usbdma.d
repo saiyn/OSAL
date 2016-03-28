@@ -1,0 +1,17 @@
+.\rvmdk\usbdma.o: usbdma.c
+.\rvmdk\usbdma.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdma.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdma.o: ..\inc/hw_memmap.h
+.\rvmdk\usbdma.o: ..\inc/hw_types.h
+.\rvmdk\usbdma.o: ..\inc/hw_ints.h
+.\rvmdk\usbdma.o: ..\inc/hw_sysctl.h
+.\rvmdk\usbdma.o: ..\inc/hw_udma.h
+.\rvmdk\usbdma.o: ..\driverlib/debug.h
+.\rvmdk\usbdma.o: ..\driverlib/interrupt.h
+.\rvmdk\usbdma.o: ..\driverlib/rtos_bindings.h
+.\rvmdk\usbdma.o: ..\driverlib/usb.h
+.\rvmdk\usbdma.o: ..\driverlib/rom.h
+.\rvmdk\usbdma.o: ..\driverlib/rom_map.h
+.\rvmdk\usbdma.o: ..\driverlib/udma.h
+.\rvmdk\usbdma.o: ..\usblib/usblib.h
+.\rvmdk\usbdma.o: ..\usblib/usblibpriv.h

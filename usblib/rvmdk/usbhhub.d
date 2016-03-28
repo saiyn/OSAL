@@ -1,0 +1,14 @@
+.\rvmdk\usbhhub.o: host\usbhhub.c
+.\rvmdk\usbhhub.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbhhub.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbhhub.o: ..\inc/hw_types.h
+.\rvmdk\usbhhub.o: ..\inc/hw_ints.h
+.\rvmdk\usbhhub.o: ..\inc/hw_sysctl.h
+.\rvmdk\usbhhub.o: ..\driverlib/usb.h
+.\rvmdk\usbhhub.o: ..\driverlib/interrupt.h
+.\rvmdk\usbhhub.o: ..\driverlib/rom_map.h
+.\rvmdk\usbhhub.o: ..\driverlib/rtos_bindings.h
+.\rvmdk\usbhhub.o: ..\usblib/usblib.h
+.\rvmdk\usbhhub.o: ..\usblib/host/usbhost.h
+.\rvmdk\usbhhub.o: ..\usblib/host/usbhostpriv.h
+.\rvmdk\usbhhub.o: ..\usblib/host/usbhhub.h

@@ -1,0 +1,15 @@
+.\rvmdk\usbdbulk.o: device\usbdbulk.c
+.\rvmdk\usbdbulk.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdbulk.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdbulk.o: ..\inc/hw_memmap.h
+.\rvmdk\usbdbulk.o: ..\inc/hw_types.h
+.\rvmdk\usbdbulk.o: ..\driverlib/debug.h
+.\rvmdk\usbdbulk.o: ..\driverlib/rom.h
+.\rvmdk\usbdbulk.o: ..\driverlib/rom_map.h
+.\rvmdk\usbdbulk.o: ..\driverlib/usb.h
+.\rvmdk\usbdbulk.o: ..\usblib/usblib.h
+.\rvmdk\usbdbulk.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdbulk.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdbulk.o: ..\usblib/device/usbdevicepriv.h
+.\rvmdk\usbdbulk.o: ..\usblib/device/usbdbulk.h
+.\rvmdk\usbdbulk.o: ..\usblib/device/usbdcomp.h

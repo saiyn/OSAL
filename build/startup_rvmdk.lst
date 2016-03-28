@@ -1,0 +1,977 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; <<< Use Configuration Wizard in Context Menu >>>
+    2 00000000         ;*******************************************************
+                       ***********************
+    3 00000000         ;
+    4 00000000         ; startup_rvmdk.S - Startup code for use with Keil's uVi
+                       sion.
+    5 00000000         ;
+    6 00000000         ; Copyright (c) 2013 Texas Instruments Incorporated.  Al
+                       l rights reserved.
+    7 00000000         ; Software License Agreement
+    8 00000000         ; 
+    9 00000000         ; Texas Instruments (TI) is supplying this software for 
+                       use solely and
+   10 00000000         ; exclusively on TI's microcontroller products. The soft
+                       ware is owned by
+   11 00000000         ; TI and/or its suppliers, and is protected under applic
+                       able copyright
+   12 00000000         ; laws. You may not combine this software with "viral" o
+                       pen-source
+   13 00000000         ; software in order to form a larger program.
+   14 00000000         ; 
+   15 00000000         ; THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
+                       
+   16 00000000         ; NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, 
+                       INCLUDING, BUT
+   17 00000000         ; NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY 
+                       AND FITNESS FOR
+   18 00000000         ; A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL 
+                       NOT, UNDER ANY
+   19 00000000         ; CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR C
+                       ONSEQUENTIAL
+   20 00000000         ; DAMAGES, FOR ANY REASON WHATSOEVER.
+   21 00000000         ; 
+   22 00000000         ; This is part of revision 2.0.1.11577 of the DK-TM4C129
+                       X Firmware Package.
+   23 00000000         ;
+   24 00000000         ;*******************************************************
+                       ***********************
+   25 00000000         
+   26 00000000         ;*******************************************************
+                       ***********************
+   27 00000000         ;
+   28 00000000         ; <o> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   29 00000000         ;
+   30 00000000         ;*******************************************************
+                       ***********************
+   31 00000000 00002000 
+                       Stack   EQU              0x00002000
+   32 00000000         
+   33 00000000         ;*******************************************************
+                       ***********************
+   34 00000000         ;
+   35 00000000         ; <o> Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   36 00000000         ;
+   37 00000000         ;*******************************************************
+                       ***********************
+   38 00000000 00002000 
+                       Heap    EQU              0x00002000
+   39 00000000         
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   40 00000000         ;*******************************************************
+                       ***********************
+   41 00000000         ;
+   42 00000000         ; Allocate space for the stack.
+   43 00000000         ;
+   44 00000000         ;*******************************************************
+                       ***********************
+   45 00000000                 AREA             STACK, NOINIT, READWRITE, ALIGN
+=3
+   46 00000000         StackMem
+   47 00000000                 SPACE            Stack
+   48 00002000         __initial_sp
+   49 00002000         
+   50 00002000         ;*******************************************************
+                       ***********************
+   51 00002000         ;
+   52 00002000         ; Allocate space for the heap.
+   53 00002000         ;
+   54 00002000         ;*******************************************************
+                       ***********************
+   55 00002000                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
+3
+   56 00000000         __heap_base
+   57 00000000         HeapMem
+   58 00000000                 SPACE            Heap
+   59 00002000         __heap_limit
+   60 00002000         
+   61 00002000         ;*******************************************************
+                       ***********************
+   62 00002000         ;
+   63 00002000         ; Indicate that the code in this file preserves 8-byte a
+                       lignment of the stack.
+   64 00002000         ;
+   65 00002000         ;*******************************************************
+                       ***********************
+   66 00002000                 PRESERVE8
+   67 00002000         
+   68 00002000         ;*******************************************************
+                       ***********************
+   69 00002000         ;
+   70 00002000         ; Place code into the reset code section.
+   71 00002000         ;
+   72 00002000         ;*******************************************************
+                       ***********************
+   73 00002000                 AREA             RESET, CODE, READONLY
+   74 00000000                 THUMB
+   75 00000000         
+   76 00000000         ;*******************************************************
+                       ***********************
+   77 00000000         ;
+   78 00000000         ; External declarations for the interrupt handlers used 
+                       by the application.
+   79 00000000         ;
+   80 00000000         ;*******************************************************
+                       ***********************
+   81 00000000         
+   82 00000000                 EXTERN           SysTickIntHandler
+   83 00000000                 EXTERN           uart0_interrupt_handler
+   84 00000000                 EXTERN           encode_interrupt_handler
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+   85 00000000                 EXTERN           Timer1IntHandler
+   86 00000000                 EXTERN           uart6_interrupt_handler
+   87 00000000                 EXTERN           uart3_interrupt_handler
+   88 00000000                 EXTERN           ir_front_recive_handler
+   89 00000000                 EXTERN           ir_in_recive_handler
+   90 00000000                 EXTERN           USB0HostIntHandler
+   91 00000000         ;*******************************************************
+                       ***********************
+   92 00000000         ;
+   93 00000000         ; The vector table.
+   94 00000000         ;
+   95 00000000         ;*******************************************************
+                       ***********************
+   96 00000000                 EXPORT           __Vectors
+   97 00000000         __Vectors
+   98 00000000 00002000        DCD              StackMem + Stack ; Top of Stack
+                                                            
+   99 00000004 00000000        DCD              Reset_Handler ; Reset Handler
+  100 00000008 00000000        DCD              NmiSR       ; NMI Handler
+  101 0000000C 00000000        DCD              FaultISR    ; Hard Fault Handle
+                                                            r
+  102 00000010 00000000        DCD              IntDefaultHandler ; The MPU fau
+                                                            lt handler
+  103 00000014 00000000        DCD              IntDefaultHandler ; The bus fau
+                                                            lt handler
+  104 00000018 00000000        DCD              IntDefaultHandler ; The usage f
+                                                            ault handler
+  105 0000001C 00000000        DCD              0           ; Reserved
+  106 00000020 00000000        DCD              0           ; Reserved
+  107 00000024 00000000        DCD              0           ; Reserved
+  108 00000028 00000000        DCD              0           ; Reserved
+  109 0000002C 00000000        DCD              IntDefaultHandler 
+                                                            ; SVCall handler
+  110 00000030 00000000        DCD              IntDefaultHandler ; Debug monit
+                                                            or handler
+  111 00000034 00000000        DCD              0           ; Reserved
+  112 00000038 00000000        DCD              IntDefaultHandler ; The PendSV 
+                                                            handler
+  113 0000003C 00000000        DCD              SysTickIntHandler ; The SysTick
+                                                             handler
+  114 00000040 00000000        DCD              IntDefaultHandler ; GPIO Port A
+                                                            
+  115 00000044 00000000        DCD              IntDefaultHandler ; GPIO Port B
+                                                            
+  116 00000048 00000000        DCD              IntDefaultHandler ; GPIO Port C
+                                                            
+  117 0000004C 00000000        DCD              ir_front_recive_handler 
+                                                            ; GPIO Port D
+  118 00000050 00000000        DCD              IntDefaultHandler ; GPIO Port E
+                                                            
+  119 00000054 00000000        DCD              uart0_interrupt_handler 
+                                                            ; UART0 Rx and Tx
+  120 00000058 00000000        DCD              IntDefaultHandler 
+                                                            ; UART1 Rx and Tx
+  121 0000005C 00000000        DCD              IntDefaultHandler 
+                                                            ; SSI0 Rx and Tx
+  122 00000060 00000000        DCD              IntDefaultHandler ; I2C0 Master
+                                                             and Slave
+  123 00000064 00000000        DCD              IntDefaultHandler ; PWM Fault
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+  124 00000068 00000000        DCD              IntDefaultHandler 
+                                                            ; PWM Generator 0
+  125 0000006C 00000000        DCD              IntDefaultHandler 
+                                                            ; PWM Generator 1
+  126 00000070 00000000        DCD              IntDefaultHandler 
+                                                            ; PWM Generator 2
+  127 00000074 00000000        DCD              IntDefaultHandler ; Quadrature 
+                                                            Encoder 0
+  128 00000078 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC Sequence 0
+  129 0000007C 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC Sequence 1
+  130 00000080 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC Sequence 2
+  131 00000084 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC Sequence 3
+  132 00000088 00000000        DCD              IntDefaultHandler 
+                                                            ; Watchdog timer
+  133 0000008C 00000000        DCD              IntDefaultHandler ; Timer 0 sub
+                                                            timer A
+  134 00000090 00000000        DCD              IntDefaultHandler ; Timer 0 sub
+                                                            timer B
+  135 00000094 00000000        DCD              Timer1IntHandler ; Timer 1 subt
+                                                            imer A
+  136 00000098 00000000        DCD              IntDefaultHandler ; Timer 1 sub
+                                                            timer B
+  137 0000009C 00000000        DCD              IntDefaultHandler ; Timer 2 sub
+                                                            timer A
+  138 000000A0 00000000        DCD              IntDefaultHandler ; Timer 2 sub
+                                                            timer B
+  139 000000A4 00000000        DCD              IntDefaultHandler ; Analog Comp
+                                                            arator 0
+  140 000000A8 00000000        DCD              IntDefaultHandler ; Analog Comp
+                                                            arator 1
+  141 000000AC 00000000        DCD              IntDefaultHandler ; Analog Comp
+                                                            arator 2
+  142 000000B0 00000000        DCD              IntDefaultHandler ; System Cont
+                                                            rol (PLL, OSC, BO)
+  143 000000B4 00000000        DCD              IntDefaultHandler 
+                                                            ; FLASH Control
+  144 000000B8 00000000        DCD              IntDefaultHandler ; GPIO Port F
+                                                            
+  145 000000BC 00000000        DCD              IntDefaultHandler ; GPIO Port G
+                                                            
+  146 000000C0 00000000        DCD              IntDefaultHandler ; GPIO Port H
+                                                            
+  147 000000C4 00000000        DCD              IntDefaultHandler 
+                                                            ; UART2 Rx and Tx
+  148 000000C8 00000000        DCD              IntDefaultHandler 
+                                                            ; SSI1 Rx and Tx
+  149 000000CC 00000000        DCD              IntDefaultHandler ; Timer 3 sub
+                                                            timer A
+  150 000000D0 00000000        DCD              IntDefaultHandler ; Timer 3 sub
+                                                            timer B
+  151 000000D4 00000000        DCD              IntDefaultHandler ; I2C1 Master
+                                                             and Slave
+  152 000000D8 00000000        DCD              IntDefaultHandler ; CAN0
+  153 000000DC 00000000        DCD              IntDefaultHandler ; CAN1
+  154 000000E0 00000000        DCD              IntDefaultHandler ; Ethernet
+
+
+
+ARM Macro Assembler    Page 5 
+
+
+  155 000000E4 00000000        DCD              IntDefaultHandler ; Hibernate
+  156 000000E8 00000000        DCD              USB0HostIntHandler ; USB0
+  157 000000EC 00000000        DCD              IntDefaultHandler 
+                                                            ; PWM Generator 3
+  158 000000F0 00000000        DCD              IntDefaultHandler ; uDMA Softwa
+                                                            re Transfer
+  159 000000F4 00000000        DCD              IntDefaultHandler ; uDMA Error
+  160 000000F8 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC1 Sequence 0
+  161 000000FC 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC1 Sequence 1
+  162 00000100 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC1 Sequence 2
+  163 00000104 00000000        DCD              IntDefaultHandler 
+                                                            ; ADC1 Sequence 3
+  164 00000108 00000000        DCD              IntDefaultHandler ; External Bu
+                                                            s Interface 0
+  165 0000010C 00000000        DCD              IntDefaultHandler ; GPIO Port J
+                                                            
+  166 00000110 00000000        DCD              IntDefaultHandler ; GPIO Port K
+                                                            
+  167 00000114 00000000        DCD              ir_in_recive_handler 
+                                                            ; GPIO Port L
+  168 00000118 00000000        DCD              IntDefaultHandler 
+                                                            ; SSI2 Rx and Tx
+  169 0000011C 00000000        DCD              IntDefaultHandler 
+                                                            ; SSI3 Rx and Tx
+  170 00000120 00000000        DCD              uart3_interrupt_handler 
+                                                            ; UART3 Rx and Tx
+  171 00000124 00000000        DCD              IntDefaultHandler 
+                                                            ; UART4 Rx and Tx
+  172 00000128 00000000        DCD              IntDefaultHandler 
+                                                            ; UART5 Rx and Tx
+  173 0000012C 00000000        DCD              uart6_interrupt_handler 
+                                                            ; UART6 Rx and Tx
+  174 00000130 00000000        DCD              IntDefaultHandler 
+                                                            ; UART7 Rx and Tx
+  175 00000134 00000000        DCD              IntDefaultHandler ; I2C2 Master
+                                                             and Slave
+  176 00000138 00000000        DCD              IntDefaultHandler ; I2C3 Master
+                                                             and Slave
+  177 0000013C 00000000        DCD              IntDefaultHandler ; Timer 4 sub
+                                                            timer A
+  178 00000140 00000000        DCD              IntDefaultHandler ; Timer 4 sub
+                                                            timer B
+  179 00000144 00000000        DCD              IntDefaultHandler ; Timer 5 sub
+                                                            timer A
+  180 00000148 00000000        DCD              IntDefaultHandler ; Timer 5 sub
+                                                            timer B
+  181 0000014C 00000000        DCD              IntDefaultHandler ; FPU
+  182 00000150 00000000        DCD              0           ; Reserved
+  183 00000154 00000000        DCD              0           ; Reserved
+  184 00000158 00000000        DCD              IntDefaultHandler ; I2C4 Master
+                                                             and Slave
+  185 0000015C 00000000        DCD              IntDefaultHandler ; I2C5 Master
+                                                             and Slave
+  186 00000160 00000000        DCD              IntDefaultHandler ; GPIO Port M
+                                                            
+  187 00000164 00000000        DCD              IntDefaultHandler ; GPIO Port N
+
+
+
+ARM Macro Assembler    Page 6 
+
+
+                                                            
+  188 00000168 00000000        DCD              0           ; Reserved
+  189 0000016C 00000000        DCD              IntDefaultHandler ; Tamper
+  190 00000170 00000000        DCD              IntDefaultHandler ; GPIO Port P
+                                                             (Summary or P0)
+  191 00000174 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P1
+  192 00000178 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P2
+  193 0000017C 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P3
+  194 00000180 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P4
+  195 00000184 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P5
+  196 00000188 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P6
+  197 0000018C 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port P7
+  198 00000190 00000000        DCD              encode_interrupt_handler ; GPIO
+                                                             Port Q (Summary or
+                                                             Q0)
+  199 00000194 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q1
+  200 00000198 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q2
+  201 0000019C 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q3
+  202 000001A0 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q4
+  203 000001A4 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q5
+  204 000001A8 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q6
+  205 000001AC 00000000        DCD              IntDefaultHandler 
+                                                            ; GPIO Port Q7
+  206 000001B0 00000000        DCD              IntDefaultHandler ; GPIO Port R
+                                                            
+  207 000001B4 00000000        DCD              IntDefaultHandler ; GPIO Port S
+                                                            
+  208 000001B8 00000000        DCD              IntDefaultHandler ; SHA/MD5 0
+  209 000001BC 00000000        DCD              IntDefaultHandler ; AES 0
+  210 000001C0 00000000        DCD              IntDefaultHandler ; DES3DES 0
+  211 000001C4 00000000        DCD              IntDefaultHandler 
+                                                            ; LCD Controller 0
+  212 000001C8 00000000        DCD              IntDefaultHandler ; Timer 6 sub
+                                                            timer A
+  213 000001CC 00000000        DCD              IntDefaultHandler ; Timer 6 sub
+                                                            timer B
+  214 000001D0 00000000        DCD              IntDefaultHandler ; Timer 7 sub
+                                                            timer A
+  215 000001D4 00000000        DCD              IntDefaultHandler ; Timer 7 sub
+                                                            timer B
+  216 000001D8 00000000        DCD              IntDefaultHandler ; I2C6 Master
+                                                             and Slave
+  217 000001DC 00000000        DCD              IntDefaultHandler ; I2C7 Master
+                                                             and Slave
+  218 000001E0 00000000        DCD              IntDefaultHandler ; HIM Scan Ma
+                                                            trix Keyboard 0
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+  219 000001E4 00000000        DCD              IntDefaultHandler ; One Wire 0
+  220 000001E8 00000000        DCD              IntDefaultHandler ; HIM PS/2 0
+  221 000001EC 00000000        DCD              IntDefaultHandler ; HIM LED Seq
+                                                            uencer 0
+  222 000001F0 00000000        DCD              IntDefaultHandler 
+                                                            ; HIM Consumer IR 0
+                                                            
+  223 000001F4 00000000        DCD              IntDefaultHandler ; I2C8 Master
+                                                             and Slave
+  224 000001F8 00000000        DCD              IntDefaultHandler ; I2C9 Master
+                                                             and Slave
+  225 000001FC 00000000        DCD              IntDefaultHandler ; GPIO Port T
+                                                            
+  226 00000200         
+  227 00000200         ;*******************************************************
+                       ***********************
+  228 00000200         ;
+  229 00000200         ; This is the code that gets called when the processor f
+                       irst starts execution
+  230 00000200         ; following a reset event.
+  231 00000200         ;
+  232 00000200         ;*******************************************************
+                       ***********************
+  233 00000200                 EXPORT           Reset_Handler
+  234 00000200         Reset_Handler
+  235 00000200         ;
+  236 00000200         ; Enable the floating-point unit.  This must be done her
+                       e to handle the
+  237 00000200         ; case where main() uses floating-point and the function
+                        prologue saves
+  238 00000200         ; floating-point registers (which will fault if floating
+                       -point is not
+  239 00000200         ; enabled).  Any configuration of the floating-point uni
+                       t using
+  240 00000200         ; DriverLib APIs must be done here prior to the floating
+                       -point unit
+  241 00000200         ; being enabled.
+  242 00000200         ;
+  243 00000200         ; Note that this does not use DriverLib since it might n
+                       ot be included
+  244 00000200         ; in this project.
+  245 00000200         ;
+  246 00000200 F64E 5088       MOVW             R0, #0xED88
+  247 00000204 F2CE 0000       MOVT             R0, #0xE000
+  248 00000208 6801            LDR              R1, [R0]
+  249 0000020A F441 0170       ORR              R1, #0x00F00000
+  250 0000020E 6001            STR              R1, [R0]
+  251 00000210         
+  252 00000210         ;
+  253 00000210         ; Call the C library enty point that handles startup.  T
+                       his will copy
+  254 00000210         ; the .data section initializers from flash to SRAM and 
+                       zero fill the
+  255 00000210         ; .bss section.
+  256 00000210         ;
+  257 00000210                 IMPORT           __main
+  258 00000210 F7FF BFFE       B                __main
+  259 00000214         
+  260 00000214         ;*******************************************************
+
+
+
+ARM Macro Assembler    Page 8 
+
+
+                       ***********************
+  261 00000214         ;
+  262 00000214         ; This is the code that gets called when the processor r
+                       eceives a NMI.  This
+  263 00000214         ; simply enters an infinite loop, preserving the system 
+                       state for examination
+  264 00000214         ; by a debugger.
+  265 00000214         ;
+  266 00000214         ;*******************************************************
+                       ***********************
+  267 00000214         NmiSR
+  268 00000214 E7FE            B                NmiSR
+  269 00000216         
+  270 00000216         ;*******************************************************
+                       ***********************
+  271 00000216         ;
+  272 00000216         ; This is the code that gets called when the processor r
+                       eceives a fault
+  273 00000216         ; interrupt.  This simply enters an infinite loop, prese
+                       rving the system state
+  274 00000216         ; for examination by a debugger.
+  275 00000216         ;
+  276 00000216         ;*******************************************************
+                       ***********************
+  277 00000216         FaultISR
+  278 00000216 E7FE            B                FaultISR
+  279 00000218         
+  280 00000218         ;*******************************************************
+                       ***********************
+  281 00000218         ;
+  282 00000218         ; This is the code that gets called when the processor r
+                       eceives an unexpected
+  283 00000218         ; interrupt.  This simply enters an infinite loop, prese
+                       rving the system state
+  284 00000218         ; for examination by a debugger.
+  285 00000218         ;
+  286 00000218         ;*******************************************************
+                       ***********************
+  287 00000218         IntDefaultHandler
+  288 00000218 E7FE            B                IntDefaultHandler
+  289 0000021A         
+  290 0000021A         ;*******************************************************
+                       ***********************
+  291 0000021A         ;
+  292 0000021A         ; Make sure the end of this section is aligned.
+  293 0000021A         ;
+  294 0000021A         ;*******************************************************
+                       ***********************
+  295 0000021A 00 00           ALIGN
+  296 0000021C         
+  297 0000021C         ;*******************************************************
+                       ***********************
+  298 0000021C         ;
+  299 0000021C         ; Some code in the normal code section for initializing 
+                       the heap and stack.
+  300 0000021C         ;
+  301 0000021C         ;*******************************************************
+                       ***********************
+  302 0000021C                 AREA             |.text|, CODE, READONLY
+
+
+
+ARM Macro Assembler    Page 9 
+
+
+  303 00000000         
+  304 00000000         ;*******************************************************
+                       ***********************
+  305 00000000         ;
+  306 00000000         ; The function expected of the C library startup code fo
+                       r defining the stack
+  307 00000000         ; and heap memory locations.  For the C library version 
+                       of the startup code,
+  308 00000000         ; provide this function so that the C library initializa
+                       tion code can find out
+  309 00000000         ; the location of the stack and heap.
+  310 00000000         ;
+  311 00000000         ;*******************************************************
+                       ***********************
+  312 00000000                 IF               :DEF: __MICROLIB
+  317 00000000                 IMPORT           __use_two_region_memory
+  318 00000000                 EXPORT           __user_initial_stackheap
+  319 00000000         __user_initial_stackheap
+  320 00000000 4802            LDR              R0, =HeapMem
+  321 00000002 4903            LDR              R1, =(StackMem + Stack)
+  322 00000004 4A03            LDR              R2, =(HeapMem + Heap)
+  323 00000006 4B04            LDR              R3, =StackMem
+  324 00000008 4770            BX               LR
+  325 0000000A                 ENDIF
+  326 0000000A         
+  327 0000000A         ;*******************************************************
+                       ***********************
+  328 0000000A         ;
+  329 0000000A         ; Make sure the end of this section is aligned.
+  330 0000000A         ;
+  331 0000000A         ;*******************************************************
+                       ***********************
+  332 0000000A 00 00           ALIGN
+  333 0000000C         
+  334 0000000C         ;*******************************************************
+                       ***********************
+  335 0000000C         ;
+  336 0000000C         ; Tell the assembler that we're done.
+  337 0000000C         ;
+  338 0000000C         ;*******************************************************
+                       ***********************
+  339 0000000C                 END
+              00000000 
+              00002000 
+              00002000 
+              00000000 
+Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\bui
+ld\startup_rvmdk.d -o.\build\startup_rvmdk.o -ID:\Keil\ARM\RV31\INC -ID:\Keil\A
+RM\CMSIS\Include -ID:\Keil\ARM\Inc\TI\TM4C129 --list=.\build\startup_rvmdk.lst 
+startup\startup_rvmdk.S
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+STACK 00000000
+
+Symbol: STACK
+   Definitions
+      At line 45 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: STACK unused
+StackMem 00000000
+
+Symbol: StackMem
+   Definitions
+      At line 46 in file startup\startup_rvmdk.S
+   Uses
+      At line 98 in file startup\startup_rvmdk.S
+      At line 321 in file startup\startup_rvmdk.S
+      At line 323 in file startup\startup_rvmdk.S
+
+__initial_sp 00002000
+
+Symbol: __initial_sp
+   Definitions
+      At line 48 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: __initial_sp unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+HEAP 00000000
+
+Symbol: HEAP
+   Definitions
+      At line 55 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: HEAP unused
+HeapMem 00000000
+
+Symbol: HeapMem
+   Definitions
+      At line 57 in file startup\startup_rvmdk.S
+   Uses
+      At line 320 in file startup\startup_rvmdk.S
+      At line 322 in file startup\startup_rvmdk.S
+
+__heap_base 00000000
+
+Symbol: __heap_base
+   Definitions
+      At line 56 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: __heap_base unused
+__heap_limit 00002000
+
+Symbol: __heap_limit
+   Definitions
+      At line 59 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: __heap_limit unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FaultISR 00000216
+
+Symbol: FaultISR
+   Definitions
+      At line 277 in file startup\startup_rvmdk.S
+   Uses
+      At line 101 in file startup\startup_rvmdk.S
+      At line 278 in file startup\startup_rvmdk.S
+
+IntDefaultHandler 00000218
+
+Symbol: IntDefaultHandler
+   Definitions
+      At line 287 in file startup\startup_rvmdk.S
+   Uses
+      At line 102 in file startup\startup_rvmdk.S
+      At line 103 in file startup\startup_rvmdk.S
+      At line 104 in file startup\startup_rvmdk.S
+      At line 109 in file startup\startup_rvmdk.S
+      At line 110 in file startup\startup_rvmdk.S
+      At line 112 in file startup\startup_rvmdk.S
+      At line 114 in file startup\startup_rvmdk.S
+      At line 115 in file startup\startup_rvmdk.S
+      At line 116 in file startup\startup_rvmdk.S
+      At line 118 in file startup\startup_rvmdk.S
+      At line 120 in file startup\startup_rvmdk.S
+      At line 121 in file startup\startup_rvmdk.S
+      At line 122 in file startup\startup_rvmdk.S
+      At line 123 in file startup\startup_rvmdk.S
+      At line 124 in file startup\startup_rvmdk.S
+      At line 125 in file startup\startup_rvmdk.S
+      At line 126 in file startup\startup_rvmdk.S
+      At line 127 in file startup\startup_rvmdk.S
+      At line 128 in file startup\startup_rvmdk.S
+      At line 129 in file startup\startup_rvmdk.S
+      At line 130 in file startup\startup_rvmdk.S
+      At line 131 in file startup\startup_rvmdk.S
+      At line 132 in file startup\startup_rvmdk.S
+      At line 133 in file startup\startup_rvmdk.S
+      At line 134 in file startup\startup_rvmdk.S
+      At line 136 in file startup\startup_rvmdk.S
+      At line 137 in file startup\startup_rvmdk.S
+      At line 138 in file startup\startup_rvmdk.S
+      At line 139 in file startup\startup_rvmdk.S
+      At line 140 in file startup\startup_rvmdk.S
+      At line 141 in file startup\startup_rvmdk.S
+      At line 142 in file startup\startup_rvmdk.S
+      At line 143 in file startup\startup_rvmdk.S
+      At line 144 in file startup\startup_rvmdk.S
+      At line 145 in file startup\startup_rvmdk.S
+      At line 146 in file startup\startup_rvmdk.S
+      At line 147 in file startup\startup_rvmdk.S
+      At line 148 in file startup\startup_rvmdk.S
+      At line 149 in file startup\startup_rvmdk.S
+      At line 150 in file startup\startup_rvmdk.S
+      At line 151 in file startup\startup_rvmdk.S
+      At line 152 in file startup\startup_rvmdk.S
+      At line 153 in file startup\startup_rvmdk.S
+      At line 154 in file startup\startup_rvmdk.S
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+      At line 155 in file startup\startup_rvmdk.S
+      At line 157 in file startup\startup_rvmdk.S
+      At line 158 in file startup\startup_rvmdk.S
+      At line 159 in file startup\startup_rvmdk.S
+      At line 160 in file startup\startup_rvmdk.S
+      At line 161 in file startup\startup_rvmdk.S
+      At line 162 in file startup\startup_rvmdk.S
+      At line 163 in file startup\startup_rvmdk.S
+      At line 164 in file startup\startup_rvmdk.S
+      At line 165 in file startup\startup_rvmdk.S
+      At line 166 in file startup\startup_rvmdk.S
+      At line 168 in file startup\startup_rvmdk.S
+      At line 169 in file startup\startup_rvmdk.S
+      At line 171 in file startup\startup_rvmdk.S
+      At line 172 in file startup\startup_rvmdk.S
+      At line 174 in file startup\startup_rvmdk.S
+      At line 175 in file startup\startup_rvmdk.S
+      At line 176 in file startup\startup_rvmdk.S
+      At line 177 in file startup\startup_rvmdk.S
+      At line 178 in file startup\startup_rvmdk.S
+      At line 179 in file startup\startup_rvmdk.S
+      At line 180 in file startup\startup_rvmdk.S
+      At line 181 in file startup\startup_rvmdk.S
+      At line 184 in file startup\startup_rvmdk.S
+      At line 185 in file startup\startup_rvmdk.S
+      At line 186 in file startup\startup_rvmdk.S
+      At line 187 in file startup\startup_rvmdk.S
+      At line 189 in file startup\startup_rvmdk.S
+      At line 190 in file startup\startup_rvmdk.S
+      At line 191 in file startup\startup_rvmdk.S
+      At line 192 in file startup\startup_rvmdk.S
+      At line 193 in file startup\startup_rvmdk.S
+      At line 194 in file startup\startup_rvmdk.S
+      At line 195 in file startup\startup_rvmdk.S
+      At line 196 in file startup\startup_rvmdk.S
+      At line 197 in file startup\startup_rvmdk.S
+      At line 199 in file startup\startup_rvmdk.S
+      At line 200 in file startup\startup_rvmdk.S
+      At line 201 in file startup\startup_rvmdk.S
+      At line 202 in file startup\startup_rvmdk.S
+      At line 203 in file startup\startup_rvmdk.S
+      At line 204 in file startup\startup_rvmdk.S
+      At line 205 in file startup\startup_rvmdk.S
+      At line 206 in file startup\startup_rvmdk.S
+      At line 207 in file startup\startup_rvmdk.S
+      At line 208 in file startup\startup_rvmdk.S
+      At line 209 in file startup\startup_rvmdk.S
+      At line 210 in file startup\startup_rvmdk.S
+      At line 211 in file startup\startup_rvmdk.S
+      At line 212 in file startup\startup_rvmdk.S
+      At line 213 in file startup\startup_rvmdk.S
+      At line 214 in file startup\startup_rvmdk.S
+      At line 215 in file startup\startup_rvmdk.S
+      At line 216 in file startup\startup_rvmdk.S
+      At line 217 in file startup\startup_rvmdk.S
+      At line 218 in file startup\startup_rvmdk.S
+      At line 219 in file startup\startup_rvmdk.S
+      At line 220 in file startup\startup_rvmdk.S
+      At line 221 in file startup\startup_rvmdk.S
+
+
+
+ARM Macro Assembler    Page 3 Alphabetic symbol ordering
+Relocatable symbols
+
+      At line 222 in file startup\startup_rvmdk.S
+      At line 223 in file startup\startup_rvmdk.S
+      At line 224 in file startup\startup_rvmdk.S
+      At line 225 in file startup\startup_rvmdk.S
+      At line 288 in file startup\startup_rvmdk.S
+
+NmiSR 00000214
+
+Symbol: NmiSR
+   Definitions
+      At line 267 in file startup\startup_rvmdk.S
+   Uses
+      At line 100 in file startup\startup_rvmdk.S
+      At line 268 in file startup\startup_rvmdk.S
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 73 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: RESET unused
+Reset_Handler 00000200
+
+Symbol: Reset_Handler
+   Definitions
+      At line 234 in file startup\startup_rvmdk.S
+   Uses
+      At line 99 in file startup\startup_rvmdk.S
+      At line 233 in file startup\startup_rvmdk.S
+
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 97 in file startup\startup_rvmdk.S
+   Uses
+      At line 96 in file startup\startup_rvmdk.S
+Comment: __Vectors used once
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 302 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: .text unused
+__user_initial_stackheap 00000000
+
+Symbol: __user_initial_stackheap
+   Definitions
+      At line 319 in file startup\startup_rvmdk.S
+   Uses
+      At line 318 in file startup\startup_rvmdk.S
+Comment: __user_initial_stackheap used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+Heap 00002000
+
+Symbol: Heap
+   Definitions
+      At line 38 in file startup\startup_rvmdk.S
+   Uses
+      At line 58 in file startup\startup_rvmdk.S
+      At line 322 in file startup\startup_rvmdk.S
+
+Stack 00002000
+
+Symbol: Stack
+   Definitions
+      At line 31 in file startup\startup_rvmdk.S
+   Uses
+      At line 47 in file startup\startup_rvmdk.S
+      At line 98 in file startup\startup_rvmdk.S
+      At line 321 in file startup\startup_rvmdk.S
+
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+SysTickIntHandler 00000000
+
+Symbol: SysTickIntHandler
+   Definitions
+      At line 82 in file startup\startup_rvmdk.S
+   Uses
+      At line 113 in file startup\startup_rvmdk.S
+Comment: SysTickIntHandler used once
+Timer1IntHandler 00000000
+
+Symbol: Timer1IntHandler
+   Definitions
+      At line 85 in file startup\startup_rvmdk.S
+   Uses
+      At line 135 in file startup\startup_rvmdk.S
+Comment: Timer1IntHandler used once
+USB0HostIntHandler 00000000
+
+Symbol: USB0HostIntHandler
+   Definitions
+      At line 90 in file startup\startup_rvmdk.S
+   Uses
+      At line 156 in file startup\startup_rvmdk.S
+Comment: USB0HostIntHandler used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 257 in file startup\startup_rvmdk.S
+   Uses
+      At line 258 in file startup\startup_rvmdk.S
+Comment: __main used once
+__use_two_region_memory 00000000
+
+Symbol: __use_two_region_memory
+   Definitions
+      At line 317 in file startup\startup_rvmdk.S
+   Uses
+      None
+Comment: __use_two_region_memory unused
+encode_interrupt_handler 00000000
+
+Symbol: encode_interrupt_handler
+   Definitions
+      At line 84 in file startup\startup_rvmdk.S
+   Uses
+      At line 198 in file startup\startup_rvmdk.S
+Comment: encode_interrupt_handler used once
+ir_front_recive_handler 00000000
+
+Symbol: ir_front_recive_handler
+   Definitions
+      At line 88 in file startup\startup_rvmdk.S
+   Uses
+      At line 117 in file startup\startup_rvmdk.S
+Comment: ir_front_recive_handler used once
+ir_in_recive_handler 00000000
+
+Symbol: ir_in_recive_handler
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+External symbols
+
+   Definitions
+      At line 89 in file startup\startup_rvmdk.S
+   Uses
+      At line 167 in file startup\startup_rvmdk.S
+Comment: ir_in_recive_handler used once
+uart0_interrupt_handler 00000000
+
+Symbol: uart0_interrupt_handler
+   Definitions
+      At line 83 in file startup\startup_rvmdk.S
+   Uses
+      At line 119 in file startup\startup_rvmdk.S
+Comment: uart0_interrupt_handler used once
+uart3_interrupt_handler 00000000
+
+Symbol: uart3_interrupt_handler
+   Definitions
+      At line 87 in file startup\startup_rvmdk.S
+   Uses
+      At line 170 in file startup\startup_rvmdk.S
+Comment: uart3_interrupt_handler used once
+uart6_interrupt_handler 00000000
+
+Symbol: uart6_interrupt_handler
+   Definitions
+      At line 86 in file startup\startup_rvmdk.S
+   Uses
+      At line 173 in file startup\startup_rvmdk.S
+Comment: uart6_interrupt_handler used once
+11 symbols
+363 symbols in table

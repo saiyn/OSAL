@@ -1,0 +1,12 @@
+.\rvmdk\usbdhandler.o: device\usbdhandler.c
+.\rvmdk\usbdhandler.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdhandler.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdhandler.o: ..\inc/hw_memmap.h
+.\rvmdk\usbdhandler.o: ..\inc/hw_types.h
+.\rvmdk\usbdhandler.o: ..\driverlib/rom.h
+.\rvmdk\usbdhandler.o: ..\driverlib/rom_map.h
+.\rvmdk\usbdhandler.o: ..\driverlib/usb.h
+.\rvmdk\usbdhandler.o: ..\usblib/usblib.h
+.\rvmdk\usbdhandler.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdhandler.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdhandler.o: ..\usblib/device/usbdevicepriv.h

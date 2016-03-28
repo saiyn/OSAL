@@ -1,0 +1,13 @@
+.\rvmdk\usbdhidkeyb.o: device\usbdhidkeyb.c
+.\rvmdk\usbdhidkeyb.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdhidkeyb.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdhidkeyb.o: ..\inc/hw_types.h
+.\rvmdk\usbdhidkeyb.o: ..\driverlib/debug.h
+.\rvmdk\usbdhidkeyb.o: ..\driverlib/usb.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/usblib.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/device/usbdevicepriv.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/usbhid.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/device/usbdhid.h
+.\rvmdk\usbdhidkeyb.o: ..\usblib/device/usbdhidkeyb.h

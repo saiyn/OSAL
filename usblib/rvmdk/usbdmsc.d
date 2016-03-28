@@ -1,0 +1,16 @@
+.\rvmdk\usbdmsc.o: device\usbdmsc.c
+.\rvmdk\usbdmsc.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdmsc.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdmsc.o: ..\inc/hw_memmap.h
+.\rvmdk\usbdmsc.o: ..\inc/hw_types.h
+.\rvmdk\usbdmsc.o: ..\driverlib/debug.h
+.\rvmdk\usbdmsc.o: ..\driverlib/rom.h
+.\rvmdk\usbdmsc.o: ..\driverlib/rom_map.h
+.\rvmdk\usbdmsc.o: ..\driverlib/sysctl.h
+.\rvmdk\usbdmsc.o: ..\driverlib/usb.h
+.\rvmdk\usbdmsc.o: ..\usblib/usblib.h
+.\rvmdk\usbdmsc.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdmsc.o: ..\usblib/usbmsc.h
+.\rvmdk\usbdmsc.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdmsc.o: ..\usblib/device/usbdevicepriv.h
+.\rvmdk\usbdmsc.o: ..\usblib/device/usbdmsc.h

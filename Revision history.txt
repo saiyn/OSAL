@@ -1,0 +1,299 @@
+                                         NAD C358/C378 Revison History
+
+=================================================================
+
+Version: 0.1.12
+Date: 2016.3.28
+Author: Saiyn Chen
+----Description----
+
+
+1)Optimize the function of the volume encoder.
+2)Change the max vol to be +15db.
+
+=================================================================
+
+Version: 0.1.11
+Date: 2016.3.23
+Author: Saiyn Chen
+----Description----
+
+1)Complete the function of MDC USB Card firmware upgrade.
+2)Fix factory reset doesn't reset mute to off.
+3)Fix "main.balance=xx" issue and support "main.balance+" and "main.balance-".
+4)Fix "main.ir.channel=" has no limite.
+5)Fix "main.mute" setting is reversed.
+6)Fix "main.source+/-", "main.source=" issue.
+7)Fix "main.volume=" issue.
+
+=================================================================
+
+Version: 0.1.10
+Date: 2016.3.19
+Author: Saiyn Chen
+----Description----
+
+1)Rewrite the OSAL_Ringbuf.c
+2)Complete the function of the HDMI V2.
+
+=================================================================
+
+Version: 0.1.9
+Date: 2016.3.8
+Author: Saiyn Chen
+----Description----
+
+1)Add uart msg push out when power on the unit.
+2)Support HDMI Card.
+3)Fix first power on pop noise of the headphone.
+4)Support HDMI V2 Card.
+
+=================================================================
+
+Version: 0.1.8
+Date: 2016.2.26
+Author: Saiyn Chen
+----Description----
+
+
+1)Fix balance L/R channel set reverse.
+2)Fix Tone control settings doesn't wprk after cycle power.
+3)Display "Factory Reset" when do unit factory reset.
+4)Reset BT to idel when do unit factory reset.
+5)Set preout default to Full Range.
+6)Modify the display of Balance and ToneControl.
+7)Change the default source to COAX1.
+8)Change format of the return msg to the UART, and add some new command listed in the "C358_commands_v2.pdf".
+
+=================================================================
+
+Version: 0.1.7
+Date: 2016.2.22
+Author: Saiyn Chen
+----Description----
+
+1)Do AMP mute when headphone plugged in to mute the cold output.
+2)Add factory reset function called by long pressing the source up and down button at the same time for about 3s.
+3)Remove power on pop noise , and reduce power off noise in the speaker and pre out.
+4)Fix incorrect front display when switching source back to BT.
+5)Change the display characters.
+6)Remove source switch pop noise.
+7)Add treble,bass,balance control function.
+
+=================================================================
+
+Version: 0.1.6
+Date: 2016.1.28
+Author: Saiyn Chen
+----Description----
+
+1)Add (1,0) ¡°unmodulated,/Polarity H¡± and (0,1)¡°Modulated/Polarity L¡± support for IR IN.
+2)Add feature if C358 powered off at -20dB or larger volume level, then it should go to -20dB when power on next time.
+3)Modify some source name.
+4)Fix go to another source before unplug HP, then unplug HP, no audio at SP.
+5)Add feature that volume adjustment speeds up when quick turning.
+ 
+=================================================================
+
+Version: 0.1.5
+Date: 2016.1.12
+Author: Saiyn Chen
+----Description----
+
+1)Add MDC Test Card support.
+
+=================================================================
+
+Version: 0.1.4
+Date: 2016.1.5
+Author: Saiyn Chen
+----Description----
+
+1)Fix source change pop noise.
+
+=================================================================
+
+Version: 0.1.3
+Date: 2015.12.30
+Author: Saiyn Chen
+----Description----
+
+1)Add firmware version menu
+
+=================================================================
+
+Version: 0.1.2
+Date: 2015.12.26
+Author: Saiyn Chen
+----Description----
+
+1)Optimize the handler flow of protection, and now the feature of automatical recover from protection mode is disabled.
+
+=================================================================
+
+Version: 0.1.1
+Date: 2015.12.25
+Author: Saiyn Chen
+----Description----
+
+1)Change source name "USB Front" to "USB Local".
+
+=================================================================
+
+Version: 0.1.0
+Date: 2015.12.24
+Author: Saiyn Chen
+----Description----
+
+1)Finish the modification due to hardware change.
+2)Add over temperature, dc error and ac error protection handler.
+
+=================================================================
+
+Version: 0.0.13
+Date: 2015.9.24
+Author: Saiyn Chen
+----Description----
+
+1)Fix source switch pop noise.
+
+=================================================================
+
+
+Version: 0.0.12
+Date: 2015.9.12
+Author: Saiyn Chen
+----Description----
+
+1)Reduce the keyboard key scan threshold to 50 from 100 to improve the key respense performance.
+2)Fix power on noise issue.
+3)Fix speaker output noise issue when switch to bypass or highpass.
+
+=================================================================
+
+Version: 0.0.11
+Date: 2015.8.26
+Author: Saiyn Chen
+----Description----
+
+1)Optimize the process to handel the situation when 2 same cards insert at the same time.
+2)Complete the trigger function.
+3)Optimize the power off handler process flow.
+4)Optimize the process to handle the situation when there are much many music files in usb card.
+
+=================================================================
+
+Version: 0.0.10
+Date: 2015.8.20
+Author: Saiyn Chen
+----Description----
+
+1)Add handelr to deal with the situation when 2 same card or 1 usb and 1 bluos crad insert at the same time.
+2)When change the source form BT to another source, cut off the power for the BT.
+3)Add IR channel select menu.
+4)Cut off the MDC power when go into standby mode.
+5)Correct src4382 configuration which before cause THD problem when the source sample rate is 44.1k.
+
+=================================================================
+
+Version: 0.0.9
+Date: 2015.8.18
+Author: Saiyn Chen
+----Description----
+
+1)Add BT_Task.c to handler BT function, and now the BT module work well.
+2)Lcd display works well in this version.
+3)Add Front IR function and it works well.
+4)Support USB card and add the display and ui control related to the usb card.
+
+=================================================================
+
+Version: 0.0.8
+Date: 2015.8.10
+Author: Saiyn Chen
+----Description----
+
+1)Add keyboard handler.
+2)Add 74hc595 driver.
+3)Add system power on routine.
+4)Fix keyboard read wrong bug.
+5)Fix 74hc595 bug.
+6)Add master volume control.
+7)Audio from RCA work well in this version.
+
+=================================================================
+
+Version: 0.0.7
+Date: 2015.7.9
+Author: Saiyn Chen
+----Description----
+
+1)Fix a iic write bug in OSAL_Soft_IIC.c.
+2)Complete the src4382 driver.
+3)Add OSAL_RingBuf.c, OSAL_Detect.c, IR_driver.c, EPRom_driver.c, sys_database.h and sys_config.h.
+
+=================================================================
+
+Version: 0.0.6
+Date: 2015.5.19
+Author: Saiyn Chen
+----Description----
+
+1)Add njw1194 driver.
+2)Add spi low level driver for the MDC.
+3)Fix LCD bus write bug.
+
+=================================================================
+
+Version: 0.0.5
+Date: 2015.5.13
+Author: Saiyn Chen
+----Description----
+
+1)Add Mdc.c,Mdc_dio.c,Mdc_usb.c,Mdc_bt.c,Mdc_hdmi.c,Mdc_ana.c and Mdc_hdmi_v2.c to support MDC cards.
+2)Add adc driver to detect the type of the MDC CARDS.
+
+=================================================================
+
+Version: 0.0.4
+Date: 2015.5.12
+Author: Saiyn Chen
+----Description----
+
+1)Update gTickCount in SysTickIntHandler().
+2)Add keyboard driver to handle encode and button.
+
+=================================================================
+
+Version: 0.0.3
+Date: 2015.5.11
+Author: Saiyn Chen
+----Description----
+
+1)Add src4382 driver.
+2)Add lcd driver.
+
+=================================================================
+
+Version: 0.0.2
+Date: 2015.5.8
+Author: Saiyn Chen
+----Description----
+
+1)Add OSAL_Soft_IIC.c file to supply iic support.
+2)Add pcm1795 driver.
+ 
+-----------------------------------------------------------------
+
+
+=================================================================
+
+Version: 0.0.1
+Date: 2015.5.4
+Author: Saiyn Chen
+----Description----
+
+1)Build the base project which supports console and env system.
+ 
+-----------------------------------------------------------------
+

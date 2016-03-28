@@ -1,0 +1,1335 @@
+Dependencies for Project 'TM4C1290', Target 'C368': (DO NOT MODIFY !)
+F (.\startup\startup_rvmdk.S)(0x56EF9EE4)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129--list .\build\startup_rvmdk.lst --xref -o .\build\startup_rvmdk.o --depend .\build\startup_rvmdk.d)
+F (.\startup\bsp.c)(0x56E90A9E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\bsp.o --omf_browse .\build\bsp.crf --depend .\build\bsp.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\njw1194.h)(0x56CD3DE1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\IR_driver.h)(0x558CCEB8)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Key.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\EPRom_driver.h)(0x56971AE2)
+F (.\sys_head.h)(0x56F0E3C0)()
+F (.\startup\sys_database.h)(0x56F27F5A)()
+F (.\startup\bsp.h)(0x56CA8774)()
+F (.\startup\sys_config.h)(0x56F3A41B)()
+F (.\lib\driverlib.lib)(0x552721D5)()
+F (.\usblib\rvmdk\usblib.lib)(0x5632BAE6)()
+F (.\OSAL\OSAL.c)(0x559E2182)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal.o --omf_browse .\build\osal.crf --depend .\build\osal.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+F (.\OSAL\OSAL_Env.c)(0x559E2182)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_env.o --omf_browse .\build\osal_env.crf --depend .\build\osal_env.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Env.h)(0x552630D9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Config.h)(0x55B883A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Utility.h)(0x551BA6BF)
+F (.\OSAL\OSAL_Port.c)(0x56822013)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_port.o --omf_browse .\build\osal_port.crf --depend .\build\osal_port.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Config.h)(0x55B883A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Env.h)(0x552630D9)
+F (.\OSAL\OSAL_Task.c)(0x56EFA457)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_task.o --omf_browse .\build\osal_task.crf --depend .\build\osal_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\serial.h)(0x559E2081)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\BT_Task.h)(0x56D3AE27)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\74hc595.h)(0x567B5928)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\IR_driver.h)(0x558CCEB8)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\MDC_Task.h)(0x56EA461D)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\NAD_Uart_App_Task.h)(0x55DD6005)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Detect.h)(0x567E6578)
+F (.\OSAL\OSAL_Timer.c)(0x559E2182)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_timer.o --omf_browse .\build\osal_timer.crf --depend .\build\osal_timer.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+F (.\OSAL\OSAL_Utility.c)(0x559E2182)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_utility.o --omf_browse .\build\osal_utility.crf --depend .\build\osal_utility.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+F (.\OSAL\OSAL_Console.c)(0x567D0AA9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_console.o --omf_browse .\build\osal_console.crf --depend .\build\osal_console.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Config.h)(0x55B883A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Env.h)(0x552630D9)
+F (.\OSAL\OSAL_Soft_IIC.c)(0x569719AC)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_soft_iic.o --omf_browse .\build\osal_soft_iic.crf --depend .\build\osal_soft_iic.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\pcm1795.h)(0x554C698F)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\EPRom_driver.h)(0x56971AE2)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+F (.\OSAL\OSAL_Key.c)(0x56CA8774)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_key.o --omf_browse .\build\osal_key.crf --depend .\build\osal_key.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Key.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\UI.h)(0x55BAEA00)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+F (.\OSAL\OSAL_RingBuf.c)(0x56EA6E7A)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_ringbuf.o --omf_browse .\build\osal_ringbuf.crf --depend .\build\osal_ringbuf.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+F (.\OSAL\OSAL_Detect.c)(0x567E6578)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\osal_detect.o --omf_browse .\build\osal_detect.crf --depend .\build\osal_detect.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Detect.h)(0x567E6578)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+F (.\application\main.c)(0x56EF58B5)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\main.o --omf_browse .\build\main.crf --depend .\build\main.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\serial.h)(0x559E2081)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\MDC.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\BT_Task.h)(0x56D3AE27)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\NAD_Uart_App_Task.h)(0x55DD6005)
+F (.\application\serial.c)(0x5603ABB9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\serial.o --omf_browse .\build\serial.crf --depend .\build\serial.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\serial.h)(0x559E2081)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+F (.\application\UI.c)(0x56F89E1B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\ui.o --omf_browse .\build\ui.crf --depend .\build\ui.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\UI.h)(0x55BAEA00)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+F (.\application\usb_stick_update.c)(0x56F3A419)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\usb_stick_update.o --omf_browse .\build\usb_stick_update.crf --depend .\build\usb_stick_update.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\usblib\usblib.h)(0x5338E630)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\usblib\usbmsc.h)(0x5338E630)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\usblib\host\usbhost.h)(0x5338E630)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\usblib\host\usbhmsc.h)(0x5338E630)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\simple_fs.h)(0x5338E61F)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\lcd_driver.h)(0x55BB1537)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+F (.\application\simple_fs.c)(0x5338E61F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\simple_fs.o --omf_browse .\build\simple_fs.crf --depend .\build\simple_fs.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\simple_fs.h)(0x5338E61F)
+F (.\Task\Soft_Timer_Task.c)(0x56A9AF9B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\soft_timer_task.o --omf_browse .\build\soft_timer_task.crf --depend .\build\soft_timer_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\serial.h)(0x559E2081)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+F (.\Task\System_Task.c)(0x56F3B143)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\system_task.o --omf_browse .\build\system_task.crf --depend .\build\system_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\EPRom_driver.h)(0x56971AE2)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Utility.h)(0x551BA6BF)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\pcm1795.h)(0x554C698F)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\njw1194.h)(0x56CD3DE1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\lcd_driver.h)(0x55BB1537)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\UI.h)(0x55BAEA00)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\74hc595.h)(0x567B5928)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\BT_Task.h)(0x56D3AE27)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\MDC_Task.h)(0x56EA461D)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\NAD_Uart_App_Task.h)(0x55DD6005)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Detect.h)(0x567E6578)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Key.h)(0x56CA8774)
+F (.\Task\Display_Task.c)(0x56F39CD0)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\display_task.o --omf_browse .\build\display_task.crf --depend .\build\display_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\lcd_driver.h)(0x55BB1537)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+F (.\Task\BT_Task.c)(0x56EA6977)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\bt_task.o --omf_browse .\build\bt_task.crf --depend .\build\bt_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\BT_Task.h)(0x56D3AE27)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+F (.\Task\MDC_Task.c)(0x56F3CB56)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_task.o --omf_browse .\build\mdc_task.crf --depend .\build\mdc_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\MDC_Task.h)(0x56EA461D)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\application\serial.h)(0x559E2081)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+F (.\Task\NAD_Uart_App_Task.c)(0x56CBFCC5)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\nad_uart_app_task.o --omf_browse .\build\nad_uart_app_task.crf --depend .\build\nad_uart_app_task.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\NAD_Uart_App_Task.h)(0x55DD6005)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Display_Task.h)(0x56F3A6CE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Detect.h)(0x567E6578)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\74hc595.h)(0x567B5928)
+F (.\Driver\pcm1795.c)(0x56025B3C)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\pcm1795.o --omf_browse .\build\pcm1795.crf --depend .\build\pcm1795.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\pcm1795.h)(0x554C698F)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+F (.\Driver\Src4382.c)(0x56A590E7)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\src4382.o --omf_browse .\build\src4382.crf --depend .\build\src4382.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+F (.\Driver\njw1194.c)(0x56CFAB0E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\njw1194.o --omf_browse .\build\njw1194.crf --depend .\build\njw1194.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\njw1194.h)(0x56CD3DE1)
+F (.\Driver\IR_driver.c)(0x56A9BFF7)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\ir_driver.o --omf_browse .\build\ir_driver.crf --depend .\build\ir_driver.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\IR_driver.h)(0x558CCEB8)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+F (.\Driver\EPRom_driver.c)(0x56971AE2)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\eprom_driver.o --omf_browse .\build\eprom_driver.crf --depend .\build\eprom_driver.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\EPRom_driver.h)(0x56971AE2)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+F (.\Driver\74hc595.c)(0x56023B0D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\74hc595.o --omf_browse .\build\74hc595.crf --depend .\build\74hc595.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\74hc595.h)(0x567B5928)
+F (.\Driver\lcd_driver.c)(0x55D02F09)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\lcd_driver.o --omf_browse .\build\lcd_driver.crf --depend .\build\lcd_driver.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\lcd_driver.h)(0x55BB1537)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Console.h)(0x5530ECC9)
+F (.\MDC\Mdc.c)(0x56F39CCA)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc.o --omf_browse .\build\mdc.crf --depend .\build\mdc.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\NAD_Uart_App_Task.h)(0x55DD6005)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Timer.h)(0x53BBD078)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\Soft_Timer_Task.h)(0x55ACAC02)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Soft_IIC.h)(0x569719AC)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\EPRom_driver.h)(0x56971AE2)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Driver\Src4382.h)(0x5698A7C0)
+F (.\MDC\Mdc_dio.c)(0x5698ABC4)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_dio.o --omf_browse .\build\mdc_dio.crf --depend .\build\mdc_dio.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+F (.\MDC\Mdc_usb.c)(0x56F276B1)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_usb.o --omf_browse .\build\mdc_usb.crf --depend .\build\mdc_usb.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+F (.\MDC\Mdc_bt.c)(0x55E3F3A4)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_bt.o --omf_browse .\build\mdc_bt.crf --depend .\build\mdc_bt.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)
+F (.\MDC\Mdc_hdmi.c)(0x56E0E61F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_hdmi.o --omf_browse .\build\mdc_hdmi.crf --depend .\build\mdc_hdmi.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+F (.\MDC\Mdc_ana.c)(0x55C955C8)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_ana.o --omf_browse .\build\mdc_ana.crf --depend .\build\mdc_ana.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+F (.\MDC\Mdc_hdmi_v2.c)(0x56EF5655)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OSAL -I.\lib -I.\inc -I..\MainApp -I.\Task -I.\application -I.\startup -I.\Driver -I.\MDC -I.\usblib -I.\usblib\host-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DPART_TM4C1290NCZAD -DTARGET_IS_SNOWFLAKE_RA0 -DNAD_C378 -DTM4C1290NCZAD-o .\build\mdc_hdmi_v2.o --omf_browse .\build\mdc_hdmi_v2.crf --depend .\build\mdc_hdmi_v2.d)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\sys_head.h)(0x56F0E3C0)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\sysctl.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\systick.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pin_map.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\gpio.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\uart.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\adc.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\ssi.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\timer.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_gpio.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\pwm.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_memmap.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_types.h)(0x533BBEAE)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\udma.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\hw_ssi.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\interrupt.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\inc\tm4c1290nczad.h)(0x5338E627)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\lib\fpu.h)(0x5338E614)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_database.h)(0x56F27F5A)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\sys_config.h)(0x56F3A41B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\startup\bsp.h)(0x56CA8774)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL.h)(0x56EFA3F1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_Task.h)(0x55EBB454)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc.h)(0x56F395A9)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_dio.h)(0x56989CCA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_usb.h)(0x56F276B1)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi.h)(0x56DE81DA)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_ana.h)(0x55A8AE56)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_bt.h)(0x55D41927)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\MDC\Mdc_hdmi_v2.h)(0x56EA0F67)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\OSAL\OSAL_RingBuf.h)(0x56EA643B)
+I (E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\Task\System_Task.h)(0x56DE7DFD)

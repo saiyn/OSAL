@@ -1,0 +1,13 @@
+.\rvmdk\usbdhidmouse.o: device\usbdhidmouse.c
+.\rvmdk\usbdhidmouse.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdhidmouse.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdhidmouse.o: ..\inc/hw_types.h
+.\rvmdk\usbdhidmouse.o: ..\driverlib/debug.h
+.\rvmdk\usbdhidmouse.o: ..\driverlib/usb.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/usblib.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/device/usbdevicepriv.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/usbhid.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/device/usbdhid.h
+.\rvmdk\usbdhidmouse.o: ..\usblib/device/usbdhidmouse.h

@@ -1,0 +1,11 @@
+.\rvmdk\usbdconfig.o: device\usbdconfig.c
+.\rvmdk\usbdconfig.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbdconfig.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbdconfig.o: ..\inc/hw_memmap.h
+.\rvmdk\usbdconfig.o: ..\inc/hw_types.h
+.\rvmdk\usbdconfig.o: ..\driverlib/debug.h
+.\rvmdk\usbdconfig.o: ..\driverlib/usb.h
+.\rvmdk\usbdconfig.o: ..\usblib/usblib.h
+.\rvmdk\usbdconfig.o: ..\usblib/usblibpriv.h
+.\rvmdk\usbdconfig.o: ..\usblib/device/usbdevice.h
+.\rvmdk\usbdconfig.o: ..\usblib/device/usbdevicepriv.h

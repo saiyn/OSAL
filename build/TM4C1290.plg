@@ -1,0 +1,599 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\TM4C1290.uvproj
+Project File Date:  03/24/2016
+
+<h2>Output:</h2>
+Build target 'C368'
+compiling UI.c...
+linking...
+Program Size: Code=94506 RO-data=6474 RW-data=1052 ZI-data=25868  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).
+Build target 'C368'
+linking...
+Program Size: Code=94506 RO-data=6474 RW-data=1052 ZI-data=25868  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\Project\\NAD\\C368\\NAD.C368.MCU.Application\\trunk\\MainApp\\build\\TM4C1290.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: TM4C1290NCZAD
+VTarget = 3.365V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Rebuild target 'C368'
+assembling startup_rvmdk.S...
+compiling bsp.c...
+compiling OSAL.c...
+compiling OSAL_Env.c...
+compiling OSAL_Port.c...
+compiling OSAL_Task.c...
+compiling OSAL_Timer.c...
+compiling OSAL_Utility.c...
+compiling OSAL_Console.c...
+compiling OSAL_Soft_IIC.c...
+compiling OSAL_Key.c...
+compiling OSAL_RingBuf.c...
+compiling OSAL_Detect.c...
+compiling main.c...
+compiling serial.c...
+compiling UI.c...
+compiling usb_stick_update.c...
+application\usb_stick_update.c(388): warning:  #177-D: variable "ui32SavedRegs" was declared but never referenced
+application\usb_stick_update.c(941): warning:  #188-D: enumerated type mixed with another type
+compiling simple_fs.c...
+compiling Soft_Timer_Task.c...
+compiling System_Task.c...
+Task\System_Task.c(580): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(569): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(612): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(693): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(711): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(728): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(844): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(988): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1161): warning:  #177-D: variable "cnt" was declared but never referenced
+Task\System_Task.c(1249): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1263): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1384): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1388): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1380): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(1426): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1427): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2163): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2187): warning:  #550-D: variable "retval" was set but never used
+Task\System_Task.c(2329): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2339): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2357): warning:  #177-D: variable "retval" was declared but never referenced
+Task\System_Task.c(2443): warning:  #186-D: pointless comparison of unsigned integer with zero
+Task\System_Task.c(2533): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2574): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(3257): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(3300): warning:  #177-D: variable "buf" was declared but never referenced
+compiling Display_Task.c...
+Task\Display_Task.c(37): warning:  #550-D: variable "p" was set but never used
+compiling BT_Task.c...
+Task\BT_Task.c(33): warning:  #188-D: enumerated type mixed with another type
+Task\BT_Task.c(26): warning:  #177-D: variable "j" was declared but never referenced
+compiling MDC_Task.c...
+compiling NAD_Uart_App_Task.c...
+compiling pcm1795.c...
+compiling Src4382.c...
+Driver\Src4382.c(308): warning:  #111-D: statement is unreachable
+compiling njw1194.c...
+compiling IR_driver.c...
+compiling EPRom_driver.c...
+compiling 74hc595.c...
+compiling lcd_driver.c...
+compiling Mdc.c...
+MDC\Mdc.c(419): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(596): warning:  #68-D: integer conversion resulted in a change of sign
+MDC\Mdc.c(870): warning:  #177-D: variable "p" was declared but never referenced
+MDC\Mdc.c(949): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(952): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(955): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(958): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(963): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(968): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(971): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(976): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(1117): warning:  #177-D: variable "retval" was declared but never referenced
+MDC\Mdc.c(1165): warning:  #177-D: variable "retval" was declared but never referenced
+compiling Mdc_dio.c...
+compiling Mdc_usb.c...
+MDC\Mdc_usb.c(383): warning:  #177-D: variable "t" was declared but never referenced
+MDC\Mdc_usb.c(456): warning:  #177-D: variable "i" was declared but never referenced
+compiling Mdc_bt.c...
+MDC\Mdc_bt.c(311): warning:  #177-D: variable "i" was declared but never referenced
+MDC\Mdc_bt.c(313): warning:  #177-D: variable "t" was declared but never referenced
+compiling Mdc_hdmi.c...
+compiling Mdc_ana.c...
+compiling Mdc_hdmi_v2.c...
+MDC\Mdc_hdmi_v2.c(174): warning:  #550-D: variable "ret" was set but never used
+MDC\Mdc_hdmi_v2.c(233): warning:  #177-D: variable "cmd" was declared but never referenced
+linking...
+Program Size: Code=94066 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 51 Warning(s).
+Load "E:\\Project\\NAD\\C368\\NAD.C368.MCU.Application\\trunk\\MainApp\\build\\TM4C1290.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: TM4C1290NCZAD
+VTarget = 3.365V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'C368'
+compiling bsp.c...
+compiling OSAL.c...
+compiling OSAL_Env.c...
+compiling OSAL_Port.c...
+compiling OSAL_Task.c...
+compiling OSAL_Timer.c...
+compiling OSAL_Utility.c...
+compiling OSAL_Console.c...
+compiling OSAL_Soft_IIC.c...
+compiling OSAL_Key.c...
+compiling OSAL_RingBuf.c...
+compiling OSAL_Detect.c...
+compiling main.c...
+compiling serial.c...
+compiling UI.c...
+application\UI.c(54): warning:  #177-D: variable "cnt" was declared but never referenced
+compiling usb_stick_update.c...
+application\usb_stick_update.c(388): warning:  #177-D: variable "ui32SavedRegs" was declared but never referenced
+application\usb_stick_update.c(941): warning:  #188-D: enumerated type mixed with another type
+compiling simple_fs.c...
+compiling Soft_Timer_Task.c...
+compiling System_Task.c...
+Task\System_Task.c(580): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(569): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(612): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(693): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(711): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(728): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(844): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(988): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1161): warning:  #177-D: variable "cnt" was declared but never referenced
+Task\System_Task.c(1249): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1263): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1384): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1388): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1380): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(1426): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1427): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2163): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2187): warning:  #550-D: variable "retval" was set but never used
+Task\System_Task.c(2329): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2339): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2357): warning:  #177-D: variable "retval" was declared but never referenced
+Task\System_Task.c(2443): warning:  #186-D: pointless comparison of unsigned integer with zero
+Task\System_Task.c(2533): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2574): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(3257): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(3300): warning:  #177-D: variable "buf" was declared but never referenced
+compiling Display_Task.c...
+Task\Display_Task.c(37): warning:  #550-D: variable "p" was set but never used
+compiling BT_Task.c...
+Task\BT_Task.c(33): warning:  #188-D: enumerated type mixed with another type
+Task\BT_Task.c(26): warning:  #177-D: variable "j" was declared but never referenced
+compiling MDC_Task.c...
+compiling NAD_Uart_App_Task.c...
+compiling pcm1795.c...
+compiling Src4382.c...
+Driver\Src4382.c(308): warning:  #111-D: statement is unreachable
+compiling njw1194.c...
+compiling IR_driver.c...
+compiling EPRom_driver.c...
+compiling 74hc595.c...
+compiling lcd_driver.c...
+compiling Mdc.c...
+MDC\Mdc.c(419): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(596): warning:  #68-D: integer conversion resulted in a change of sign
+MDC\Mdc.c(870): warning:  #177-D: variable "p" was declared but never referenced
+MDC\Mdc.c(949): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(952): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(955): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(958): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(963): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(968): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(971): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(976): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(1117): warning:  #177-D: variable "retval" was declared but never referenced
+MDC\Mdc.c(1165): warning:  #177-D: variable "retval" was declared but never referenced
+compiling Mdc_dio.c...
+compiling Mdc_usb.c...
+MDC\Mdc_usb.c(383): warning:  #177-D: variable "t" was declared but never referenced
+MDC\Mdc_usb.c(456): warning:  #177-D: variable "i" was declared but never referenced
+compiling Mdc_bt.c...
+MDC\Mdc_bt.c(311): warning:  #177-D: variable "i" was declared but never referenced
+MDC\Mdc_bt.c(313): warning:  #177-D: variable "t" was declared but never referenced
+compiling Mdc_hdmi.c...
+compiling Mdc_ana.c...
+compiling Mdc_hdmi_v2.c...
+MDC\Mdc_hdmi_v2.c(174): warning:  #550-D: variable "ret" was set but never used
+MDC\Mdc_hdmi_v2.c(233): warning:  #177-D: variable "cmd" was declared but never referenced
+linking...
+Program Size: Code=94042 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 52 Warning(s).
+Load "E:\\Project\\NAD\\C368\\NAD.C368.MCU.Application\\trunk\\MainApp\\build\\TM4C1290.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: TM4C1290NCZAD
+VTarget = 3.365V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'C368'
+compiling main.c...
+compiling UI.c...
+application\UI.c(54): warning:  #177-D: variable "cnt" was declared but never referenced
+linking...
+Program Size: Code=94042 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 1 Warning(s).
+Build target 'C368'
+compiling bsp.c...
+compiling OSAL.c...
+compiling OSAL_Env.c...
+compiling OSAL_Port.c...
+compiling OSAL_Task.c...
+compiling OSAL_Timer.c...
+compiling OSAL_Console.c...
+compiling OSAL_Soft_IIC.c...
+compiling OSAL_Key.c...
+compiling OSAL_Detect.c...
+compiling main.c...
+compiling serial.c...
+compiling UI.c...
+application\UI.c(54): warning:  #177-D: variable "cnt" was declared but never referenced
+compiling usb_stick_update.c...
+application\usb_stick_update.c(388): warning:  #177-D: variable "ui32SavedRegs" was declared but never referenced
+application\usb_stick_update.c(941): warning:  #188-D: enumerated type mixed with another type
+compiling Soft_Timer_Task.c...
+compiling System_Task.c...
+Task\System_Task.c(580): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(569): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(612): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(693): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(711): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(728): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(844): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(988): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1161): warning:  #177-D: variable "cnt" was declared but never referenced
+Task\System_Task.c(1249): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1263): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1384): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1388): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1380): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(1426): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1427): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2166): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2190): warning:  #550-D: variable "retval" was set but never used
+Task\System_Task.c(2332): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2342): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2360): warning:  #177-D: variable "retval" was declared but never referenced
+Task\System_Task.c(2446): warning:  #186-D: pointless comparison of unsigned integer with zero
+Task\System_Task.c(2536): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2577): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(3260): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(3303): warning:  #177-D: variable "buf" was declared but never referenced
+compiling Display_Task.c...
+Task\Display_Task.c(37): warning:  #550-D: variable "p" was set but never used
+compiling BT_Task.c...
+Task\BT_Task.c(33): warning:  #188-D: enumerated type mixed with another type
+Task\BT_Task.c(26): warning:  #177-D: variable "j" was declared but never referenced
+compiling MDC_Task.c...
+compiling NAD_Uart_App_Task.c...
+compiling pcm1795.c...
+compiling Src4382.c...
+Driver\Src4382.c(308): warning:  #111-D: statement is unreachable
+compiling njw1194.c...
+compiling IR_driver.c...
+compiling lcd_driver.c...
+compiling Mdc.c...
+MDC\Mdc.c(419): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(596): warning:  #68-D: integer conversion resulted in a change of sign
+MDC\Mdc.c(870): warning:  #177-D: variable "p" was declared but never referenced
+MDC\Mdc.c(949): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(952): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(955): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(958): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(963): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(968): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(971): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(976): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(1117): warning:  #177-D: variable "retval" was declared but never referenced
+MDC\Mdc.c(1165): warning:  #177-D: variable "retval" was declared but never referenced
+compiling Mdc_dio.c...
+compiling Mdc_usb.c...
+MDC\Mdc_usb.c(383): warning:  #177-D: variable "t" was declared but never referenced
+MDC\Mdc_usb.c(456): warning:  #177-D: variable "i" was declared but never referenced
+compiling Mdc_bt.c...
+MDC\Mdc_bt.c(311): warning:  #177-D: variable "i" was declared but never referenced
+MDC\Mdc_bt.c(313): warning:  #177-D: variable "t" was declared but never referenced
+compiling Mdc_hdmi.c...
+compiling Mdc_ana.c...
+compiling Mdc_hdmi_v2.c...
+MDC\Mdc_hdmi_v2.c(174): warning:  #550-D: variable "ret" was set but never used
+MDC\Mdc_hdmi_v2.c(233): warning:  #177-D: variable "cmd" was declared but never referenced
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 52 Warning(s).
+Load "E:\\Project\\NAD\\C368\\NAD.C368.MCU.Application\\trunk\\MainApp\\build\\TM4C1290.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: TM4C1290NCZAD
+VTarget = 3.365V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'C368'
+compiling bsp.c...
+compiling OSAL.c...
+compiling OSAL_Env.c...
+compiling OSAL_Port.c...
+compiling OSAL_Task.c...
+compiling OSAL_Timer.c...
+compiling OSAL_Utility.c...
+compiling OSAL_Console.c...
+compiling OSAL_Soft_IIC.c...
+compiling OSAL_Key.c...
+compiling OSAL_RingBuf.c...
+compiling OSAL_Detect.c...
+compiling main.c...
+compiling serial.c...
+compiling UI.c...
+application\UI.c(54): warning:  #177-D: variable "cnt" was declared but never referenced
+compiling usb_stick_update.c...
+application\usb_stick_update.c(388): warning:  #177-D: variable "ui32SavedRegs" was declared but never referenced
+application\usb_stick_update.c(941): warning:  #188-D: enumerated type mixed with another type
+compiling Soft_Timer_Task.c...
+compiling System_Task.c...
+Task\System_Task.c(580): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(569): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(612): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(693): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(711): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(728): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(844): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(988): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1161): warning:  #177-D: variable "cnt" was declared but never referenced
+Task\System_Task.c(1249): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1263): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1384): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1388): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(1380): warning:  #177-D: variable "p" was declared but never referenced
+Task\System_Task.c(1426): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(1427): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2166): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2190): warning:  #550-D: variable "retval" was set but never used
+Task\System_Task.c(2332): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2342): warning:  #550-D: variable "p" was set but never used
+Task\System_Task.c(2360): warning:  #177-D: variable "retval" was declared but never referenced
+Task\System_Task.c(2446): warning:  #186-D: pointless comparison of unsigned integer with zero
+Task\System_Task.c(2536): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(2577): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+Task\System_Task.c(3260): warning:  #188-D: enumerated type mixed with another type
+Task\System_Task.c(3303): warning:  #177-D: variable "buf" was declared but never referenced
+compiling Display_Task.c...
+Task\Display_Task.c(37): warning:  #550-D: variable "p" was set but never used
+compiling BT_Task.c...
+Task\BT_Task.c(33): warning:  #188-D: enumerated type mixed with another type
+Task\BT_Task.c(26): warning:  #177-D: variable "j" was declared but never referenced
+compiling MDC_Task.c...
+compiling NAD_Uart_App_Task.c...
+compiling pcm1795.c...
+compiling Src4382.c...
+Driver\Src4382.c(308): warning:  #111-D: statement is unreachable
+compiling njw1194.c...
+compiling IR_driver.c...
+compiling EPRom_driver.c...
+compiling 74hc595.c...
+compiling lcd_driver.c...
+compiling Mdc.c...
+MDC\Mdc.c(419): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(596): warning:  #68-D: integer conversion resulted in a change of sign
+MDC\Mdc.c(870): warning:  #177-D: variable "p" was declared but never referenced
+MDC\Mdc.c(949): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(952): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(955): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(958): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(963): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(968): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(971): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(976): warning:  #188-D: enumerated type mixed with another type
+MDC\Mdc.c(1117): warning:  #177-D: variable "retval" was declared but never referenced
+MDC\Mdc.c(1165): warning:  #177-D: variable "retval" was declared but never referenced
+compiling Mdc_dio.c...
+compiling Mdc_usb.c...
+MDC\Mdc_usb.c(383): warning:  #177-D: variable "t" was declared but never referenced
+MDC\Mdc_usb.c(456): warning:  #177-D: variable "i" was declared but never referenced
+compiling Mdc_bt.c...
+MDC\Mdc_bt.c(311): warning:  #177-D: variable "i" was declared but never referenced
+MDC\Mdc_bt.c(313): warning:  #177-D: variable "t" was declared but never referenced
+compiling Mdc_hdmi.c...
+compiling Mdc_ana.c...
+compiling Mdc_hdmi_v2.c...
+MDC\Mdc_hdmi_v2.c(174): warning:  #550-D: variable "ret" was set but never used
+MDC\Mdc_hdmi_v2.c(233): warning:  #177-D: variable "cmd" was declared but never referenced
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 52 Warning(s).
+Load "E:\\Project\\NAD\\C368\\NAD.C368.MCU.Application\\trunk\\MainApp\\build\\TM4C1290.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "E:\Project\NAD\C368\NAD.C368.MCU.Application\trunk\MainApp\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: TM4C1290NCZAD
+VTarget = 3.365V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'C368'
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).
+Build target 'C368'
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).
+Build target 'C368'
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).
+Build target 'C368'
+linking...
+Program Size: Code=94082 RO-data=6474 RW-data=1012 ZI-data=25908  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\build\NAD_C358.bin .\build\TM4C1290.axf
+".\build\TM4C1290.axf" - 0 Errors, 0 Warning(s).

@@ -1,0 +1,9 @@
+.\rvmdk\usbhhidkeyboard.o: host\usbhhidkeyboard.c
+.\rvmdk\usbhhidkeyboard.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\rvmdk\usbhhidkeyboard.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\rvmdk\usbhhidkeyboard.o: ..\inc/hw_types.h
+.\rvmdk\usbhhidkeyboard.o: ..\usblib/usblib.h
+.\rvmdk\usbhhidkeyboard.o: ..\usblib/host/usbhost.h
+.\rvmdk\usbhhidkeyboard.o: ..\usblib/usbhid.h
+.\rvmdk\usbhhidkeyboard.o: ..\usblib/host/usbhhid.h
+.\rvmdk\usbhhidkeyboard.o: ..\usblib/host/usbhhidkeyboard.h
